@@ -5,12 +5,12 @@
 通过语音和说话人视频呈现教学内容。
 
 支持单纯文本体验，也支持 **Qwen 文本/TTS API + 独立 FLOAT GPU Worker**。
-面向学习、研究与项目展示；不是医疗系统，也不是生产级在线教育平台。
+面向学习、研究与项目展示。
 
 ![AI 生成的教师示例](assets/teacher/real-teacher-002-float-aligned.png)
 
 *示例人像由 majicMIX realistic v7 生成，不是真实教师照片。图片来源与许可说明见
-[展示素材](assets/README.md)。本仓库不包含麦橘模型权重。*
+[展示素材](assets/README.md)。
 
 ## 可以做什么
 
@@ -106,8 +106,6 @@ API 会产生费用；自己的 Key 留在本地服务端，不写进前端或 G
 
 ## 可选：本地语义检索与语音输入
 
-两者均装在 **Web 环境**，不是新增两个环境。
-
 ```powershell
 # 语义检索（CPU；仅关键词 BM25 检索不需要这些额外依赖）
 python -m pip install -r requirements-rag.txt
@@ -118,8 +116,6 @@ python scripts/maintenance/download_asr_model.py
 
 BGE 权重需另行下载并配置路径，操作见 [RAG 指南](docs/rag.md)；
 ASR 下载脚本只下载 INT8 模型等必要文件，详见 [ASR 指南](docs/asr.md)。
-不需要 Ollama，也不需要克隆独立的 LangGraph/RAG 项目。
-模型不会随 GitHub 源码一起发布。
 
 ## 可选：本地 FLOAT 视频
 
@@ -194,8 +190,6 @@ npm run build
 
 一次真实 RTX 4090 课程测试：10 段、178 秒视频，FLOAT 推理累计 140.919 秒，
 **视频时长 / 推理耗时 = 1.263×**；第一段就绪后用户观察到连续播放。
-这不是首包延迟或端到端实时率：该轮 TTS 累计约 51 秒，首次等待仍然明显。
-只代表一次应用场景测量，非平均性能保证。[详细记录](docs/performance-results.md)
 
 - 本地可信用户演示，没有生产级认证、权限隔离和高并发保障，不要直接部署到公网。
 - 云模型输出、发音及课程覆盖率需要人工检查；不承诺教学、诊断或治疗效果。
