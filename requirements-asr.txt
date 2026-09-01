@@ -1,0 +1,2 @@
+# Optional CPU speech recognition; no PyTorch/CUDA or cloud API required.
+sherpa-onnx==1.13.6

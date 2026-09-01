@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Virtual Teacher placeholder</title>
+  <desc id="desc">Original geometric preview. Configure your own licensed portrait for FLOAT.</desc>
+  <rect width="512" height="512" rx="28" fill="#e7efe9"/>
+  <circle cx="256" cy="192" r="70" fill="#587a69"/>
+  <path d="M120 364c0-73 61-118 136-118s136 45 136 118" fill="#587a69"/>
+  <path d="M226 185h8m44 0h8" stroke="#e7efe9" stroke-width="12" stroke-linecap="round"/>
+  <path d="M235 217q21 16 42 0" fill="none" stroke="#e7efe9" stroke-width="6" stroke-linecap="round"/>
+  <text x="256" y="420" text-anchor="middle" font-family="sans-serif" font-size="23" fill="#1d5143">VIRTUAL TEACHER</text>
+  <text x="256" y="451" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#69746f">Configure your own portrait to enable video</text>
+</svg>

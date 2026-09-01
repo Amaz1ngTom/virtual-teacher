@@ -1,0 +1,7 @@
+-r requirements.txt
+
+# Optional local semantic retrieval. PyTorch installation may be replaced with
+# a CUDA-specific build when the user explicitly chooses GPU embeddings.
+torch>=2.1
+transformers>=4.41,<5
+safetensors>=0.4,<1
