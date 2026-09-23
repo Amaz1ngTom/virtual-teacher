@@ -12,7 +12,7 @@
 *示例人像由 majicMIX realistic v7 生成，不是真实教师照片。图片来源与许可说明见
 [展示素材](assets/README.md)。
 
-![Virtual Teacher 项目界面预览](assets/screenshots/project-preview.png)
+![Virtual Teacher 项目界面预览](assets/teacher/project-preview.png)
 
 ## 可以做什么
 
